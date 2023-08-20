@@ -1,0 +1,32 @@
+--Create a grocery store database
+
+CREATE TABLE school_supplies (id INTEGER PRIMARY KEY, Name text, Color text, Pack_count integer, Year integer, Duration text, Price integer); 
+
+INSERT into school_supplies VALUES (1, "Lead Pencils", "yellow", 10, 2022, "4 months", 5); 
+INSERT into school_supplies VALUES (2, "Pens","black",10, 2022, "4 months", 6); 
+INSERT into school_supplies Values (3, "Folders", "yellow, blue, red, green",7, 2023, "6 months", 10); 
+INSERT into school_supplies VALUES (4, "Notebooks", "black, green, yellow, red, orange, and purple",7, 2023, "1 year", 10); 
+INSERT into school_supplies VALUES (5, "Loose Leaf Paper", "White", 1, 2022, "6 months", 4); 
+INSERT into school_supplies VALUES (6, "Erasers", "pink, white, black", 3, 2023, "8 months", 4); 
+INSERT into school_supplies VALUES (7, "White out", "White", 2, 2023, "1 year", 5); 
+INSERT into school_supplies VALUES (8, "Backpack", "Black, Red, Yellow, Purple, Pink, Brown, Green", 1, 2023, "2 years", 20); 
+INSERT into school_supplies VALUES (9, "Colored Pencils", "Red, Orange, Yellow, Green, Blue, Indigo, Violet", 7, 2022, "1 year", 7);
+INSERT into school_supplies VALUES (10, "Crayons", "Red, Orange, Yellow, Green, Blue, Indigo, Violet", 7, 2022, "1 year", 5); 
+INSERT into school_supplies VALUES (11, "Markers", "Red, Orange, Yellow, Green, Blue, Indigo, Violet", 7, 2023, "1 year", 10); 
+INSERT into school_supplies VALUES (12, "Highlighters", "Neon Green, Neon Pink, Neon Yellow", 3, 2023, "1 Year", 8); 
+INSERT into school_supplies VALUES (13, "Binders", "Green, Black, White", "1", 2023, "1 year", 10); 
+INSERT into school_supplies VALUES (14, "Calculator", "Black, Green, and Purple", 1, 2023, "5 years", 20); 
+INSERT into school_supplies VALUES (15, "Ruler", "Green, Red, Yellow, Purple, Blue, orange", 1, 2022, "2 years", 5); 
+
+
+--display combined price of all items
+Select SUM(price) 
+FROM school_supplies; 
+
+
+--display the database ordered by price 
+SELECT * FROM store
+ORDER BY price desc; 
+
+
+
